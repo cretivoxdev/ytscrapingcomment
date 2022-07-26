@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    flask test
+    <form action="{{ url_for('youtube')}}" method="post">
+        <div class="form-group">
+            <label for="URL Youtube">URL Youtube</label>
+            <input name="url" required>
+            <button type="submit" class="btn royal btn-block">Submit</button>
+        </div>
+        
+    </form>
+    {% if comments %}
+        After Comments Youtube
+    {% else %}
+        Before Comments Youtube
+    {% endif %}
+</body>
+</html>
