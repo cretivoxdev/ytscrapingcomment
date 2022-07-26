@@ -14,14 +14,14 @@ def index():
 @app.route('/youtube', methods = ["POST","GET"])
 def youtube():
     url = str(request.form.get("url"))
-    print(url)
+    # print(url)
     
     #syntax if in 1 line
     data = downloader.get_comments_from_url(url)
     count = 0 
     data_comment = []
     for comment in data:
-        print(comment)
+        # print(comment)
         data_comment.append(comment)
     comment_json = json.dumps(data_comment)
     json_file = open("data_comment.json","w")
