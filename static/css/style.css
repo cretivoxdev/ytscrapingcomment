@@ -1,0 +1,31 @@
+#loading{
+    z-index: 19999;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.493);
+    color: black;
+    display: none;
+}
+
+.single .card form{
+    width: 400px;
+} 
+
+.single .card{
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 20px;
+}
+
+#mostWords{
+    font-size: 5em;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 500;
+}
+
+p{
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
