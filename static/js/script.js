@@ -65,7 +65,7 @@ fetch("../static/data_parsing.json")
    };
    mostArray = findTopThree(dataParsing)
    document.getElementById("mostWords").textContent = mostArray.join(" | ")
-   console.log(mostArray);
+   console.log(mostArray[1]);
    
    
 

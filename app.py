@@ -40,4 +40,4 @@ def youtube():
     return render_template('index.html' , comments = data_comment[0])
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port="1010")
